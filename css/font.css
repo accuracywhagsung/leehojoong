@@ -1,0 +1,13 @@
+@charset "utf-8";
+@font-face{
+    src: url(../font/OPTINonoy.otf);
+    font-family: "swaro";
+}
+@font-face{
+    src:url(../font/fonnts.com-3224/fonts/fonnts.com-ITC-Novarese-Book.ttf);
+    font-family: "itc";
+}
+@font-face{
+    src: url(../font/euclid-circular-a/Euclid\ Circular\ A\ Medium.ttf);
+    font-family: "euc";
+}

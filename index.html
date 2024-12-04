@@ -1,0 +1,72 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+      * {margin:0; padding:0;}
+      body {text-align:center;}
+      h1 {font-size:24px; margin:20px;}
+      svg {
+          width:600px;
+          margin:20px;
+          background-color:#f8f8f8;
+          background-image:url(img/line2.png), url(img/line1.png);
+      }        
+  </style>
+</head>
+<body>
+  
+  <h1>animation</h1>
+  <svg height="300" class="text_box">
+      <style>
+          .text_box text tspan {
+              font-family:'Anton', sans-serif;
+              font-size:80px;
+              fill:transparent;
+              stroke-width:3px;
+              stroke:rgb(236, 82, 82);
+              stroke-dasharray:350px;
+              stroke-dashoffset:350px;
+              animation:xmas 1s linear forwards;
+          }
+          .text_box text tspan:nth-of-type(1) {animation-delay:0s;}
+          .text_box text tspan:nth-of-type(2) {animation-delay:0.5s;}
+          .text_box text tspan:nth-of-type(3) {animation-delay:1s;}
+          .text_box text tspan:nth-of-type(4) {animation-delay:1.5s;}
+          .text_box text tspan:nth-of-type(5) {animation-delay:2s;}
+          .text_box text tspan:nth-of-type(6) {animation-delay:2.5s;}
+          .text_box text tspan:nth-of-type(7) {animation-delay:3s;}
+          .text_box text tspan:nth-of-type(8) {animation-delay:3.5s;}
+          .text_box text tspan:nth-of-type(9) {animation-delay:4s;}
+          .text_box text tspan:nth-of-type(10) {animation-delay:4.5s;}
+          .text_box text tspan:nth-of-type(11) {animation-delay:5s;}
+          .text_box text tspan:nth-of-type(12) {animation-delay:5.5s;}
+          .text_box text tspan:nth-of-type(13) {animation-delay:6s;}
+          .text_box text tspan:nth-of-type(14) {animation-delay:6.5s;}
+          @keyframes xmas {
+              0% {stroke-dashoffset:350px;}
+              30% {fill:transparent;}
+              100% {stroke-dashoffset:0; fill:rgb(236, 82, 82);}
+          }
+
+          .text_box text tspan:nth-of-type(1),
+          .text_box text tspan:nth-of-type(12) {
+              stroke-dasharray:600px;
+              stroke-dashoffset:600px;
+              animation-name:xmas2;
+              animation-duration:1.5s;
+          }
+
+          @keyframes xmas2 {
+              0% {stroke-dashoffset:600px;}
+              30% {fill:transparent;}
+              100% {stroke-dashoffset:0; fill:rgb(236, 82, 82);}
+          }
+
+      </style>
+      <text x="50" y="200"><tspan>M</tspan><tspan>E</tspan><tspan>R</tspan><tspan>R</tspan><tspan>Y</tspan> <tspan>C</tspan><tspan>H</tspan><tspan>R</tspan><tspan>I</tspan><tspan>S</tspan><tspan>T</tspan><tspan>M</tspan><tspan>A</tspan><tspan>S</tspan></text>
+  </svg>
+
+</body></html>
